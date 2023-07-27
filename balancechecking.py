@@ -19,9 +19,7 @@ class Solution:
             return True
         return False
         
-                    
-                
-            pass
+        pass
 
 def main():
     str1=input()
