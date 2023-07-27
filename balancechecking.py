@@ -3,18 +3,19 @@ class Solution:
         brackets = 0
         parens = 0
         curly = 0
-        if "{" in parenthesis:
-            curly = curly + 1
-        if "}" in parenthesis:
-            curly -= 1
-        if "[" in parenthesis:
-            brackets += 1
-        if "]" in parenthesis:
-            brackets -= 1
-        if "(" in parenthesis:
-            parens += 1
-        if ")" in parenthesis:
-            parens -= 1
+        for p in parenthesis:
+            if "{" == p:
+                curly = curly + 1
+            if "}" == p:
+                curly -= 1
+            if "[" == p:
+                brackets += 1
+            if "]" == p:
+                brackets -= 1
+            if "(" == p:
+                parens += 1
+            if ")" == p :
+                parens -= 1
         if brackets == 0 and parens == 0 and curly == 0:
             return True
         return False
