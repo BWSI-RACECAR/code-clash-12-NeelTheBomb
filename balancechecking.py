@@ -2,7 +2,7 @@ class Solution:
     def isBalanced(self, parenthesis): 
             #type parenthesis: string
             #return type: boolean
-            dict = {"}":"{", "]":"[",")":"("}
+            dict = {"}":"{", "]":"[",")":"(", "}":"{", "[":"]","(":")"}
             #TODO: Write code below to returnn a boolean value with the solution to the prompt. 
             count = 0
             print(parenthesis)
