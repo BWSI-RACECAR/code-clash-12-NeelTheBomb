@@ -9,7 +9,7 @@ class Solution:
             for e in range(len(parenthesis)//2):
                 count = 0
                 char = parenthesis[e]
-                for i in range(len(parenthesis)):
+                for i in range(len(parenthesis)//2, len(parenthesis)):
                     if ((char == dict[parenthesis[i]]) and (e != i)):
                          count = count+1
                 if count == 0:
