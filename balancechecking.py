@@ -10,7 +10,7 @@ class Solution:
                 count = 0
                 char = parenthesis[e]
                 for i in range(len(parenthesis)):
-                    if (parenthesis[i] == parenthesis[e]) and (e != i):
+                    if ((char == parenthesis[i]) and (e != i)):
                          count = count+1
                 if count == 0:
                     return False
