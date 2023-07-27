@@ -15,7 +15,7 @@ class Solution:
             parens += 1
         if ")" in parenthesis:
             parens -= 1
-        if brackets == 0 and parens == 0 and curly == 0:4
+        if brackets == 0 and parens == 0 and curly == 0:
             return True
         return False
         
