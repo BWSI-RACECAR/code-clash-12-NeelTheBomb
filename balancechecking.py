@@ -16,7 +16,7 @@ class Solution:
             for e in range(len(list)):
                 count = 0
                 char = parenthesis[e]
-                for i in range(len(list)):
+                for i in range(e, len(list)):
                     if ((char == dict[list[i]]) and (e != i)):
                          count = count+1
                 if count == 0:
