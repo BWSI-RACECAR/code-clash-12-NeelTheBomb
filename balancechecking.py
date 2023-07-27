@@ -12,10 +12,10 @@ class Solution:
             #TODO: Write code below to returnn a boolean value with the solution to the prompt. 
             count = 0
             print(parenthesis)
-            for e in range(len(list)//2):
+            for e in range(len(list)):
                 count = 0
                 char = parenthesis[e]
-                for i in range(len(list)//2, len(list)):
+                for i in range(len(list)):
                     if ((char == dict[list[i]]) and (e != i)):
                          count = count+1
                 if count == 0:
