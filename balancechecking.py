@@ -1,6 +1,6 @@
 class Solution:
     def isBalanced(self, parenthesis): 
-        breckets = 0
+        brackets = 0
         parens = 0
         curly = 0
         if "{" in parenthesis:
