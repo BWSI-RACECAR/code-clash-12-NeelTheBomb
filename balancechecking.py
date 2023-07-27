@@ -5,6 +5,7 @@ class Solution:
             
             #TODO: Write code below to returnn a boolean value with the solution to the prompt. 
             count = 0
+            print(parenthesis)
             for e in range(len(parenthesis)):
                 count = 0
                 char = parenthesis[e]
