@@ -3,14 +3,20 @@ class Solution:
             #type parenthesis: string
             #return type: boolean
             dict = {"}":"{", "]":"[",")":"(", "}":"{", "[":"]","(":")"}
+            list = []
+            if len(parenthesis) <= 1):
+                return False
+            for c in parenthesis:
+                if c in dict:
+                    list.append(c)
             #TODO: Write code below to returnn a boolean value with the solution to the prompt. 
             count = 0
             print(parenthesis)
-            for e in range(len(parenthesis)//2):
+            for e in range(len(list)//2):
                 count = 0
                 char = parenthesis[e]
-                for i in range(len(parenthesis)//2, len(parenthesis)):
-                    if ((char == dict[parenthesis[i]]) and (e != i)):
+                for i in range(len(list)//2, len(list)):
+                    if ((char == dict[list[i]]) and (e != i)):
                          count = count+1
                 if count == 0:
                     return False
