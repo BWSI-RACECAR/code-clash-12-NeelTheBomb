@@ -9,6 +9,7 @@ class Solution:
             for c in parenthesis:
                 if c in dict:
                     list.append(c)
+            print(list)
             #TODO: Write code below to returnn a boolean value with the solution to the prompt. 
             count = 0
             print(parenthesis)
