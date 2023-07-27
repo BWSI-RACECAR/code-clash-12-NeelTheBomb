@@ -4,7 +4,7 @@ class Solution:
             #return type: boolean
             dict = {"}":"{", "]":"[",")":"(", "}":"{", "[":"]","(":")"}
             list = []
-            if len(parenthesis) <= 1):
+            if len(parenthesis) <= 1:
                 return False
             for c in parenthesis:
                 if c in dict:
