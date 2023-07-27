@@ -2,7 +2,7 @@ class Solution:
     def isBalanced(self, parenthesis): 
             #type parenthesis: string
             #return type: boolean
-            dict = {"}":"{", "]":"[",")":"(", "}":"{", "[":"]","(":")"}
+            dict = {"}":"{", "]":"[",")":"(", "{":"}", "[":"]","(":")"}
             list = []
             if len(parenthesis) <= 1:
                 return False
